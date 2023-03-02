@@ -96,6 +96,16 @@ h3{
 }
 
 
+.row, .row-b {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
 
 
 
@@ -1586,10 +1596,19 @@ padding: .75em 0 1em 0;
     }
      section.artWork {
          width: 100%;
-         flex-direction: column;
+         flex-direction:column;
          align-items: center;
          padding: 8px 0 6em 8px;
     }
+}
+
+
+@media (max-width: 767px){
+    .row-b{
+        flex-direction: column-reverse;
+    }    
+
+
 }
  @media (max-width: 599px){
      .tooBlock1 {
