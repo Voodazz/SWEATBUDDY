@@ -459,7 +459,7 @@ button.headerButton:hover{
      transition: all .5s ease;
 }
 .navbar-dark .navbar-nav .nav-link:hover, a.nav-link:hover {
-    color:#FF6161!important;
+    color:#ff862f!important;
     transition: all .5s ease;
 }
  button.viewButton a {
