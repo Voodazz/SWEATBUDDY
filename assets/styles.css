@@ -88,12 +88,14 @@ h3{
 }
 
 .jumbotron-SB-misc {
-    background: url(images/SB-KICKBOXING.png);
+    background:url(images/SB-KICKBOXING.png);
     background-attachment: fixed;
     background-size: cover;
     padding: 12em 0 12em 0!important;
     background-position: center;
 }
+
+
 
 
 
