@@ -58,7 +58,7 @@ h3{
     
     color: #212121;
     margin-top: 8px;
-    font-size: clamp(1.26em, 3vw, 2rem);
+    font-size: clamp(1.26em, 3vw, 1.76rem);
 }
 .jumbotron-SB-connect img, .jumbotron-SB-motivate img,
 .jumbotron-SB-sweat img, .jumbotron-SB-testimony img  {
