@@ -125,12 +125,12 @@ h3{
 }
  
 
-.SB-sweatBlock::before {
+/*.SB-sweatBlock::before {
     content: url(images/SB-WORKOUTAPP1.png);
     position: absolute;
     top: -460px;
     left: 314px;
-}
+}*/
 
  .navListItems a{
      color:#fff;
