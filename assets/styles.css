@@ -45,7 +45,7 @@ h3{
 }
 
 .jumbotron-SB-connect h2, .jumbotron-SB-motivate h2,
-.jumbotron-SB-sweat h2, .jumbotron-SB-testimony h2 {
+.jumbotron-SB-sweat h2, .jumbotron-standard h2, .jumbotron-SB-testimony h2 {
     font-size: 3em;
     font-weight: 700;
     color: #212121;
@@ -53,7 +53,7 @@ h3{
 }  
 
 .jumbotron-SB-connect p, .jumbotron-SB-motivate p,
-.jumbotron-SB-sweat p, .jumbotron-SB-testimony p {
+.jumbotron-SB-sweat p, .jumbotron-standard p, .jumbotron-SB-testimony p {
     font-size: 2em;
     
     color: #212121;
@@ -61,7 +61,7 @@ h3{
     font-size: clamp(1.26em, 3vw, 1.76rem);
 }
 .jumbotron-SB-connect img, .jumbotron-SB-motivate img,
-.jumbotron-SB-sweat img, .jumbotron-SB-testimony img  {
+.jumbotron-SB-sweat img, .jumbotron-standard img, .jumbotron-SB-testimony img  {
     width: 100%;
 }
 
@@ -872,8 +872,20 @@ header.case-study-mainHeader-SB{
     background: transparent;
     background-size:cover;
     background-position: 0,0;
+    background: url(images/SB-HERO-IMAGE2b.png);
     /*height: 90vh;*/
 } 
+
+.jumbotron-SB-header {
+    background: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8em 0 0 0;
+    background: url(images/SB-HERO-IMAGE2b.png);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
  h1.case-study-headerBody{
      color: #fff;
      text-align: left;
@@ -1482,7 +1494,7 @@ img.interviewProfile-dc{
 
 
 
-.jumbotron-SB-header {
+.jumbotron-SB-header .jumbotron-SUB-header {
     background: transparent;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1490,7 +1502,14 @@ img.interviewProfile-dc{
     background: url(images/SB-HERO-IMAGE2b.png);
     background-size: cover;
     background-position: top;
-    height: 100vh;
+    height: 100vh; 
+}
+
+.jumbotron-SUB-header{
+    background:url(images/SUB-HERO.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
 }
 
 img.SB-hero-logo{
@@ -1642,7 +1661,11 @@ padding: .75em 0 1em 0;
 @media (max-width: 767px){
     .row-b{
         flex-direction: column-reverse;
-    }    
+    } 
+    .connect-img{display:none;} 
+    
+    
+    
 
 
 }
@@ -1703,3 +1726,110 @@ padding: .75em 0 1em 0;
     }
 }
  
+
+/*======== PROGRESS BAR ============*/
+
+/*body{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    background-color: #2a9d8f;
+}*/
+.progress{
+    position: relative;
+    height: 10px;
+    width: 1110%;
+    border: 10px solid #f4a261;
+    border-radius: 15px;
+}
+.progress .color{
+    position: absolute;
+    background-color: #ffffff;
+    width: 0px;
+    height: 10px;
+    border-radius: 15px;
+    animation: progres 4s infinite linear;    
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
+
+
+HTML CSSResult Skip Results Iframe
+EDIT ON
+bodY {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.wave {
+  width: 5px;
+  height: 100px;
+  background: linear-gradient(45deg, cyan, #fff);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+
